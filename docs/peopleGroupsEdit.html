@@ -17,6 +17,7 @@
     <script src="./js/bootstrap/bootstrap.js"></script>
     <script src="./js/selectric/jquery.selectric.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/channelNew.js"></script>
     <script src="./js/menu.js"></script>
     <script>
         $(function(){
@@ -82,27 +83,23 @@
                             </div>
                             <div class="tpi-form__row">
                                 <label class="tpi-form__label">
-                                    角色授權 <br>(主管/承辦)
+                                    可使用APP
                                 </label>
                                 <div class="tpi-form__col">
-                                    BizChecker
+                                    MB
                                 </div>
                             </div>
                             <div class="tpi-form__row">
                                 <label class="tpi-form__label">
                                     <span class="tpi-text-blue">*</span>
-                                    變更角色授權 <br>(主管/承辦)
+                                    變更可使用APP
                                 </label>
                                 <div class="tpi-form__col">
-                                    <div class="tpi-selectric--other">
-                                        <select>
-                                            <option value="">請選擇</option>
-                                            <option value="Biz Checker">Biz Checker</option>
-                                            <option value="Biz Maker">Biz Maker</option>
-                                            <option value="Digital Checker">Digital Checker</option>
-                                            <option value="Digital Maker">Digital Maker</option>
-                                        </select>
+                                    <div id="appchoose">
+                                        <div id="showAPP">MB</div>
                                     </div>
+                                    <button class="tpi-button tpi-button--temptext" type="button"
+                                        onclick="displayModalAPP('show');">APP查詢</button>
                                 </div>
                             </div>
                             <div class="tpi-form__action-container">
@@ -117,6 +114,7 @@
             </div>
         </div>
     </div>
+    <div class="APPQuery"></div>
 </body>
 
 </html>

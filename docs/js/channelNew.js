@@ -24,7 +24,7 @@ function appClick() {
     
     applist = $("input:checkbox[name='appCheckbox']:checked").map(function () {
         return $(this).val()
-    }).get().join('<br>');
+    }).get().join('、');
     node = '<div id="showAPP">' + applist + '</div>'
     $("#appchoose").append(node);
     $('#dialog-app').modal('hide');
