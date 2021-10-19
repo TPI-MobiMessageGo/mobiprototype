@@ -46,10 +46,10 @@
                 </div>
             </div>
             <div class="page-container__content">
-                <div class="page-title">項目新增
+                <div class="page-title">項目編輯
                     <div class="breadcrumbs clearfix">
                         <label class="breadcrumbs__item">通知項目設定</label>
-                        <label class="breadcrumbs__item">新增項目</label>
+                        <label class="breadcrumbs__item">編輯</label>
                     </div>
                 </div>
                 <div class="tpi-card">
@@ -61,40 +61,10 @@
                                     <div class="tpi-input tpi-input--disabled">
                                         <div class="tpi-input__inner">
                                             <input type="text" class="tpi-input__other-input" name="itemName" id="itemName"
-                                                placeholder="請填入通知項目" autocomplete="off" value="系統依編碼規則自動產生"
+                                                placeholder="請填入通知項目" autocomplete="off" value="P010001"
                                                 readonly/>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="tpi-form__row">
-                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>通知類別</label>
-                                <div class="tpi-form__col">
-                                  <div class="tpi-selectric--other">
-                                    <select name="channel" id="channel">
-                                      <option value="">
-                                        請選擇
-                                      </option>
-                                      <option value="P01">
-                                        行銷類
-                                      </option>
-                                      <option value="P02">
-                                        基金類
-                                      </option>
-                                      <option value="P03">
-                                        台外幣帳務
-                                      </option>
-                                      <option value="P04">
-                                        貸款通知
-                                      </option>
-                                      <option value="P05">
-                                        信用卡通知
-                                      </option>
-                                      <option value="P06">
-                                        優先點數通知
-                                      </option>
-                                    </select>
-                                  </div>
                                 </div>
                             </div>
                             <div class="tpi-form__row">
@@ -103,7 +73,7 @@
                                     <div class="tpi-input">
                                         <div class="tpi-input__inner">
                                             <input type="text" class="tpi-input__other-input" name="itemName" id="itemName"
-                                                placeholder="請輸入通知項目" autocomplete="off" value=""
+                                                placeholder="請輸入通知項目" autocomplete="off" value="行銷通知"
                                                 />
                                         </div>
                                     </div>
@@ -112,10 +82,10 @@
                             <div class="tpi-form__row">
                                 <label class="tpi-form__label"><span class="tpi-text-blue">*</span>通知類別來源</label>
                                 <div class="tpi-form__col">
-                                    API
+                                    ADMIN
                                 </div>
                             </div>
-                            <div class="tpi-form__row">
+                            <div class="tpi-form__row" id="marketingFile">
                                 <label class="tpi-form__label"><span class="tpi-text-blue">*</span>綁定Channel </label>
                                 <div class="tpi-form__col">
                                   <div class="tpi-selectric--other">
@@ -123,7 +93,7 @@
                                       <option value="">
                                         請選擇
                                       </option>
-                                      <option value="IB/MB">
+                                      <option value="IB/MB" selected>
                                         IB/MB
                                       </option>
                                     </select>
