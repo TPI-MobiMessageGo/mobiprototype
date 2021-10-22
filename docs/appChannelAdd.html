@@ -27,6 +27,8 @@
             arrowButtonMarkup: '<span class="arrow"></span>',
             maxHeight: 250
           });
+
+          $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
   </head>
@@ -76,7 +78,16 @@
                   </div>
                 </div>
                 <div class="tpi-form__row">
-                    <label class="tpi-form__label"><span class="tpi-text-blue">*</span>APP名稱</label>
+                    <label class="tpi-form__label"><span class="tpi-text-blue">*</span>APP名稱
+                      <div
+                        class="tpi-info-tooltip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="限20字(包含標點符號)"
+                      >
+                        <span class="icon-info"></span>
+                      </div>
+                    </label>
                     <div class="tpi-form__col">
                       <div class="tpi-input">
                         <div class="tpi-input__inner">
@@ -121,7 +132,7 @@
                             class="tpi-input__other-input"
                             name="tempName"
                             id="tempName"
-                            placeholder="請填入package name"
+                            placeholder="請填入bundle id"
                             autocomplete="off"
                             value=""
                           />
@@ -139,7 +150,7 @@
                             class="tpi-input__other-input"
                             name="tempName"
                             id="tempName"
-                            placeholder="請填入管理者"
+                            placeholder="請填入管理者註記"
                             autocomplete="off"
                             value=""
                           />
