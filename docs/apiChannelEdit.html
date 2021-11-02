@@ -57,7 +57,7 @@
                     <div class="tpi-card__content">
                         <form action="#" novalidate class="tpi-form">
                             <div class="tpi-form__row">
-                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>API Channel ID</label>
+                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>API Channel 代碼</label>
                                 <div class="tpi-form__col">
                                     <div class="tpi-input tpi-input--disabled">
                                         <div class="tpi-input__inner">
@@ -94,47 +94,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tpi-form__row msgConTypeCode">
-                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>綁定APP
-                                </label>
-                                <div class="tpi-form__col">
-                                    <div id="appchoose">
-                                        <div id="showAPP">MB</div>
-                                    </div>
-                                    <button class="tpi-button tpi-button--temptext" type="button"
-                                        onclick="displayModalAPP('show');">APP查詢</button>
-                                </div>
-                            </div>
-                            <div class="tpi-form__row msgConTypeCode">
-                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>綁定API
-                                </label>
-                                <div class="tpi-form__col">
-                                    <div id="apichoose">
-                                        <div class="showAPI">PUSH0001:addUser</div>
-                                        <div class="showAPI">PUSH0002:deleteUser</div>
-                                        <div class="showAPI">PUSH0004:queryUser</div>
-                                        <div class="showAPI">PUSH0005:appLoginEvent</div>
-                                        <div class="showAPI">PUSH0006:bindDevice</div>
-                                        <div class="showAPI">PUSH0007:queryUserDevices</div>
-                                        <div class="showAPI">PUSH0010:updateMsgItemConf</div>
-                                        <div class="showAPI">PUSH0011:updatePushConf</div>
-                                        <div class="showAPI">PUSH0012:releaseDevice</div>
-                                        <div class="showAPI">PUSH0101:addDevice</div>
-                                        <div class="showAPI">PUSH0102:deleteDevice</div>
-                                        <div class="showAPI">PUSH0103:updateDevice</div>
-                                        <div class="showAPI">PUSH0104:queryDevice</div>
-                                        <div class="showAPI">PUSH0202:queryMessages</div>
-                                        <div class="showAPI">PUSH0203:updateMessageStatus</div>
-                                        <div class="showAPI">PUSH0205:getMessageItems</div>
-                                    </div>
-                                    <button class="tpi-button tpi-button--temptext" type="button"
-                                        onclick="displayModalApi('show');">API查詢</button>
-                                </div>
-                            </div>
                             <div class="tpi-form__row">
                                 <label class="tpi-form__label"><span class="tpi-text-blue">*</span>TPS
                                     <div class="tpi-info-tooltip" data-toggle="tooltip" data-placement="top"
-                                        title="建議不超過30,上限200">
+                                        title="建議不超過30次/秒，上限200次/秒">
                                         <span class="icon-info"></span>
                                     </div>
                                 </label>
@@ -148,7 +111,7 @@
                                 </div>
                             </div>
                             <div class="tpi-form__row">
-                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>API Channel狀態</label>
+                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>狀態</label>
                                 <div class="tpi-form__col">
                                     <div class="tpi-radio">
                                         <div class="tpi-radio__inner">
@@ -168,6 +131,46 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="tpi-form__row msgConTypeCode">
+                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>綁定APP
+                                </label>
+                                <div class="tpi-form__inline-group">
+                                    <button class="tpi-button tpi-button--temptext" type="button"
+                                        onclick="displayModalAPP('show');">APP查詢</button>
+                                    <div id="appchoose">
+                                        <div id="showAPP">MB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tpi-form__row msgConTypeCode">
+                                <label class="tpi-form__label"><span class="tpi-text-blue">*</span>綁定API
+                                </label>
+                                <div class="tpi-form__col">
+                                    <button class="tpi-button tpi-button--temptext" type="button"
+                                        onclick="displayModalApi('show');">API查詢</button>
+                                </div>
+                            </div>
+                            <div  class="tpi-form__row">
+                                <label class="tpi-form__label"></label>
+                            <div id="apichoose">
+                                <div class="showAPI">PUSH0001:addUser</div>
+                                <div class="showAPI">PUSH0002:deleteUser</div>
+                                <div class="showAPI">PUSH0004:queryUser</div>
+                                <div class="showAPI">PUSH0005:appLoginEvent</div>
+                                <div class="showAPI">PUSH0006:bindDevice</div>
+                                <div class="showAPI">PUSH0007:queryUserDevices</div>
+                                <div class="showAPI">PUSH0010:updateMsgItemConf</div>
+                                <div class="showAPI">PUSH0011:updatePushConf</div>
+                                <div class="showAPI">PUSH0012:releaseDevice</div>
+                                <div class="showAPI">PUSH0101:addDevice</div>
+                                <div class="showAPI">PUSH0102:deleteDevice</div>
+                                <div class="showAPI">PUSH0103:updateDevice</div>
+                                <div class="showAPI">PUSH0104:queryDevice</div>
+                                <div class="showAPI">PUSH0202:queryMessages</div>
+                                <div class="showAPI">PUSH0203:updateMessageStatus</div>
+                                <div class="showAPI">PUSH0205:getMessageItems</div>
+                            </div>
+                        </div>
                             <div class="tpi-form__action-container">
                                 <button class="tpi-button tpi-button--secondary" type="button"
                                     onclick="location.href='apiChannel.html'">
